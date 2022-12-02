@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x $(find /alx-system_engineering-devops/0x01-shell_permissions -type d)
+chmod +x dir1 dir2 dir3
