@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | head -10
+find . -printf "%T@ %Tc %p\n" | sort -n | head -10   
