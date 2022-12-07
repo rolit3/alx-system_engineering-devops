@@ -38,4 +38,7 @@
 ##### 9. Duplicate last line : Write a script that duplicates the last line of the file iacta -> The file iacta will be in the working directory
 >> Use tail -1 iacta >> iacta
 
-#####  
+##### 10. No more javascript : Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
+>> Modern version of find command has *-delete* option that allow found item being directly delected. It avoid us use -exec rm {} \ command. in the command, it is important to use "" instead of '' for specifying the files like "*.js" instead of '*.js'
+
+##### 11. Don't just count your directories, make your directories count mandatory : Write a script that counts the number of directories and sub-directories in the current directory.    The current and parent directories should not be taken into accountHidden directories should be counted
