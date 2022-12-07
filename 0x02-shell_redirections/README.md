@@ -20,3 +20,20 @@
 
 ##### 6. Line #2  : Write a script that displays the third line of the file iacta. | The file iacta will be in the working directory | You’re not allowed to use sed
 > Use head command with '|' and tail -n the last line (-n 3) since 'head 3' display the third entry of my file
+##### 7. It is a good file that cuts iron without making a noise : Write a shell script that creates a file named exactly \*\\'"Best School"\'\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
+> This was not simple and quit difficult. But easy when you understand the process. 
+> They are some special chars that requires '' to be considered ass a part of the title. For example : 
+>> if I want \ in my file name, i need to try *touch 'my\filename.txt'*. output -> my\filename.txt 
+>> if I want my file contains single quote '. then i will need to write the name inside double quotes ""->  *touch "Rollin's_file.txt"* Output -> Rollin's_file.txt
+>> the rule is reversed with double quote "" -> *touch 'this is my "file".txt' Output -> this is my "file".txt
+>> if file name must contains \, you must keep it inside single quote ''. 
+>> The file name must be inside *'' single quotes* for these chars : *-, #, ;, !, @, (, ), <, >, \, " *
+>> The file name must be preceded of *\* if the next *char is espace*
+>> No need action when it concerns these chars : *+%^&[]{}_=?.:~* and * *star*
+>> If the file name must contains *, '* and *"* together, then, you need to combine the rules. Here is an exmple:
+>> file name: $'thismy"file"\name'
+>> dealing : '$' "'thismy" '"file"\' "name'"
+>> That is ! {Of course, you should noot add the spaces. I added them to make my explain easy}
+
+#####  9. Duplicate last line : Write a script that duplicates the last line of the file iacta -> The file iacta will be in the working directory
+>>
