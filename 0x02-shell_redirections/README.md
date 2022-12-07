@@ -42,3 +42,4 @@
 >> Modern version of find command has *-delete* option that allow found item being directly delected. It avoid us use -exec rm {} \ command. in the command, it is important to use "" instead of '' for specifying the files like "*.js" instead of '*.js'
 
 ##### 11. Don't just count your directories, make your directories count mandatory : Write a script that counts the number of directories and sub-directories in the current directory.    The current and parent directories should not be taken into accountHidden directories should be counted
+>>mindepth avoid us counting the current dir : find -mindepth 1 -type d | wc -l 
