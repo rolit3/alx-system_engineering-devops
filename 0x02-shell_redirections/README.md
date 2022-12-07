@@ -35,5 +35,7 @@
 >> dealing : '$' "'thismy" '"file"\' "name'"
 >> That is ! {Of course, you should noot add the spaces. I added them to make my explain easy}
 
-#####  9. Duplicate last line : Write a script that duplicates the last line of the file iacta -> The file iacta will be in the working directory
->>
+##### 9. Duplicate last line : Write a script that duplicates the last line of the file iacta -> The file iacta will be in the working directory
+>> Use tail -1 iacta >> iacta
+
+#####  
