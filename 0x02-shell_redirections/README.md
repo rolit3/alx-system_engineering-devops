@@ -66,7 +66,7 @@
 > grep -v search for inverted match
 
 ##### 18. Letters only please : Display all lines of the file /etc/ssh/sshd_config starting with a letter.
-> 
+> grep -i with ^[a-z] on the file will search all entry from a to z 
 
 ##### 19. A to Z : Replace all characters A and c from input to Z and e respectively.
 > tr command allow us to translate or delete a char tr "A" "Z" means A will be replaced by Z
