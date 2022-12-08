@@ -78,4 +78,4 @@
 > rev command on an input reverse content
 
 ##### 22. DJ Cut Killer : Write a script that displays all users and their home directories, sorted by users. - Based on the the /etc/passwd file
-> 
+> cut -d from : and -f of 1-6, then sort the output
