@@ -35,6 +35,9 @@
 >> dealing : '$' "'thismy" '"file"\' "name'"
 >> That is ! {Of course, you should noot add the spaces. I added them to make my explain easy}
 
+##### 8. Save current state of directory : Write a script that writes into the file ls_cwd_content the result of the command ls -la. If the file ls_cwd_content already exists, it should be overwritten. If the file ls_cwd_content does not exist, create it.
+>Redirect the output of ls -la in a file (ls_cwd_content) 
+
 ##### 9. Duplicate last line : Write a script that duplicates the last line of the file iacta -> The file iacta will be in the working directory
 >> Use tail -1 iacta >> iacta
 
@@ -44,4 +47,35 @@
 ##### 11. Don't just count your directories, make your directories count mandatory : Write a script that counts the number of directories and sub-directories in the current directory.    The current and parent directories should not be taken into accountHidden directories should be counted
 >>mindepth avoid us counting the current dir : find -mindepth 1 -type d | wc -l 
 
-#### 
+##### 12. What’s new : Create a script that displays the 10 newest files in the current directory - Requirements: One file per line - Sorted from the newest to the oldest
+>ls -t option sort by time, head display by default top 10 element
+
+##### 13. Being unique is better than being perfect : Create a script that takes a list of words as input and prints only words that appear exactly once.
+> we sort the output, then we use pip and uniq -u the output sorted
+
+##### 14. It must be in that file : Display lines containing the pattern “root” from the file /etc/passwd
+> We grep the output of /etc/passwd
+
+##### 15. Count that word : Display the number of lines that contain the pattern “bin” in the file /etc/passwd
+>we grep 'bin' of output and wc -l the grepped content
+
+##### 16. What's next?  : Display lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
+> grep "root"  -A 3 option of /etc/passwd will help because -A 3 means display 3 lines after matching lines 
+
+##### 17. I hate bins : Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.
+> grep -v search for inverted match
+
+##### 18. Letters only please : Display all lines of the file /etc/ssh/sshd_config starting with a letter.
+> 
+
+##### 19. A to Z : Replace all characters A and c from input to Z and e respectively.
+> tr command allow us to translate or delete a char tr "A" "Z" means A will be replaced by Z
+
+##### 20. Without C, you would live in hiago : Create a script that removes all letters c and C from input.
+> tr -d "AB" will delete AB from input
+
+##### 21. esreveR : Write a script that reverse its input.
+> rev command on an input reverse content
+
+##### 22. DJ Cut Killer : Write a script that displays all users and their home directories, sorted by users. - Based on the the /etc/passwd file
+> 
